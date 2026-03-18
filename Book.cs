@@ -1,14 +1,11 @@
-public class Book
+public class Book: Materials
 {
-    public string Name {get; set;}
-    public int YearOfPublication {get; set;}
-    public Book(string name, int year)
+    public Book(string name,  int year): base(name, year)
     {
-        Name = name;
-        YearOfPublication = year;
+        
     }
-    public string GetInfo()
+    public override string GetInfo()
     {
-        return $"Title: {Name}, Year: {YearOfPublication}";
+        return $"Title: {Name}, Year: {Year}";
     }
 }

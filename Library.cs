@@ -1,16 +1,20 @@
 
 public class Library
 {
-    List<Book> listLibrary = new();
-    public void AddBook(Book b)
+    List<Materials> listLibrary = new();
+
+    public void Add(Materials m)
     {
-        listLibrary.Add(b);
+        listLibrary.Add(m);
+
     }
     public void ShowMaterial()
     {
-        foreach (Book book in listLibrary)
+        Console.WriteLine("MATERIALS:");
+
+        foreach (Materials material in listLibrary)
         {
-            Console.WriteLine($"Materials: {book.GetInfo()}");
+            Console.WriteLine($"{material.GetInfo()}");
         }
     }
 }
