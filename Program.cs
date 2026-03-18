@@ -1,7 +1,7 @@
 ﻿Library lib = new();
 
-Book book1  = new("ddnlnd", 1982);
-Book book2 = new("kira", 345);
+Book book1  = new("donaldlend", 1982, "Yulia");
+Book book2 = new("lalalend", 1345, "Kira");
 
 Journal journal1 = new("IKira", 2008, 98-90);
 Journal journal2 = new("IMArk", 2011, 6565-32);
@@ -17,3 +17,5 @@ lib.Add(video1);
 lib.Add(video2);
 
 lib.ShowMaterial();
+lib.PerformActions();
+lib.SearchByYear(2008);

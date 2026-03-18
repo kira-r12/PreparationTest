@@ -9,4 +9,5 @@ public abstract class Materials
     }
 
     public abstract string GetInfo();
+    public abstract string Action();
 }

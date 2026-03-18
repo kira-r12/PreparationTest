@@ -10,4 +10,8 @@ public class Video: Materials
     {
         return $"Video: {Name} - {Year},  time: {TimeLine}";
     }
+    public override string Action()
+    {
+        return $"Відтворюю відео {Name} тривалістю {TimeLine} хв...";
+    }
 }

@@ -17,4 +17,22 @@ public class Library
             Console.WriteLine($"{material.GetInfo()}");
         }
     }
+    public void PerformActions()
+    {
+        foreach (Materials mat in listLibrary)
+        {
+            Console.WriteLine($"{mat.Action()}");
+        }
+    }
+    public void SearchByYear(int year)
+    {
+        foreach (Materials filtrYear in listLibrary)
+        {
+            if (filtrYear.Year == year)
+            {
+                Console.WriteLine(filtrYear.GetInfo());
+            }
+        }
+    }
+
 }

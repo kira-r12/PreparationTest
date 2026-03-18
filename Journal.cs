@@ -10,4 +10,8 @@ public class Journal: Materials
     {
         return $"Journal: {Name} - {Year} №{Number}";
     }
+    public override string Action()
+    {
+        return $"Переглядаю сторінки журналу..";
+    }
 }
